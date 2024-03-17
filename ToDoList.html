@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>To Do List</title>
+        <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Abril+Fatface:400,700" 
+              rel="stylesheet">
+              <link rel="stylesheet" href="assets/css/general.css" />
+              <link rel="stylesheet" href="assets/css/to-do-list.css" />
+              <link rel="stylesheet" href='assets/css/fontawesome/fontawesome.css' />
+              <link rel="stylesheet" href='assets/css/fontawesome/brands.css' />
+              <link rel="stylesheet" href='assets/css/fontawesome/solid.css' />
+              <link rel="stylesheet" href='assets/css/fontawesome/regular.css' />
+    </head>
+    <body>
+        <div class="container ">
+            <div class="header" >
+                    <div class="d-flex space-between  text-align-center">
+                        <h1>My To Do List</h1>
+                        <div class="menu">
+                            <a href="#"><h2>Menu</h2></a>
+                        </div>
+                    </div>
+            </div>
+            <div class="content  d-flex flex-column">
+                <div class="col-6 justify-center">
+                    <div class="d-flex" >
+                        <input class="input" placeholder="Enter Your Task!" />
+                        <button class="icon" onclick="addTask()"><i class="fa fa-check-circle" aria-hidden="true">Add Task</i></button>
+                    </div>
+                </div>
+                <div class="list-box">
+                    <ul class="list"></ul>  
+                </div>
+                             
+            </div>
+        </div>
+        <script>
+            function addTask() {
+                var list = document.querySelector(".list");
+                var input = document.querySelector(".input");
+                var inputValue = input.value;
+                // console.log(inputValue);
+                if (inputValue.trim().length == 0) {
+                    alert ("Plaese Enter a Task!");
+                    input.value = '';
+                    input.focus();
+                    return;
+                }
+                if (inputValue.trim().length < 3) {
+                    alert ("Plaese write 3 character at least!");
+                    input.value = '';
+                    input.focus();
+                    return;
+                }
+                var li = document.createElement("LI");
+                li.textContent = inputValue;
+                list.appendChild(li);
+                input.value = '';
+                input.focus();
+            }
+
+        </script>
+    </body>
+</html>

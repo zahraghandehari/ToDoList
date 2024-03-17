@@ -1,0 +1,66 @@
+body {
+    direction: ltr;
+    font-family: "Mukta Mahee", arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/Plus!\ Aquarium2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+ul,
+ol {
+    list-style: square;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Abril Fatface", Arial, Helvetica, sans-serif;
+}
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header {
+    padding: 40px 0;
+    width: 100%;
+    color: #f18a1c;
+}
+.header h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+.menu h2 {
+    color: #f18a1c;
+}
+.input {
+    width: 50%;
+    height: 34px;
+    margin-right: 20px;
+    border-radius: 30px;
+    padding-left: 15px;
+}
+.icon {
+    width: auto;
+    height:30px;
+    color: #000;
+    transition: .3s all ease;
+    background-color:  #f18a1c;
+    border-radius: 25px;
+    padding: 0 15px;
+
+}
+.list {
+    margin-left: 10px;
+    padding-top: 10px;
+}
+.list-box {
+    width: 50%;
+    min-height: 400px;
+    background-color: #ffffff86;
+    border: #000;
+    border-radius: 30px;
+    padding-left: 15px;
+    margin: 30px 0;
+}
